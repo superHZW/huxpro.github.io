@@ -1,15 +1,15 @@
 ---
 layout:     keynote
-title:      "Progressive Web App 之我见"
+title:      "test"
 subtitle:   "Slides: Progressive Web App, in my points of view"
-iframe:     "//huangxuan.me/pwa-in-my-pov/"
+iframe:     ""
 navcolor:   "invert"
-date:       2016-06-05
-author:     "Hux"
+date:       2017-05-20
+author:     "HZW"
 tags:
-    - 前端开发
-    - JavaScript
-    - PWA
+    - 
+    - 
+    - 
 ---
 
 
