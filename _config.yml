@@ -1,5 +1,5 @@
 # Site settings
-title: my person world!
+title: HZW BLOG
 SEOTitle: HZW Blog
 header-img: img/home-bg.jpg
 email: ryzuz39@gmail.com
@@ -68,11 +68,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "生活大爆炸"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-
+sidebar-avatar: ""      # use absolute URL, seeing it's used in both `/` and `/about/
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
@@ -82,10 +78,3 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
-
-
-
-# Friends
-friends: [
-
-]
