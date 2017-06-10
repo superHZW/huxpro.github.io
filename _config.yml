@@ -16,7 +16,6 @@ RSS: false
 # linkedin_username:  firstname-lastname-idxxxx
 
 github_username : superHzw
-weibo_username : "咖喱辣椒鸡排"
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
