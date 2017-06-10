@@ -15,7 +15,7 @@ RSS: false
 #twitter_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
 
-github_username:superHzw
+github_username : superHzw
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
@@ -62,7 +62,7 @@ duoshuo_share: false                     # set to false if you want to use Comme
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-avatar: ""      # use absolute URL, seeing it's used in both `/` and `/about/
+sidebar-avatar: "/img/C724631103262322A04ABE2645062C82.png"      # use absolute URL, seeing it's used in both `/` and `/about/
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
