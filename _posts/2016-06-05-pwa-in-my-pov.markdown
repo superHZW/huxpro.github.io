@@ -1,110 +1,48 @@
 ---
 layout:     keynote
-title:      "都 2015 年了，CSS 怎么还是这么糟糕"
-subtitle:   "Slides: CSS Still Sucks 2015"
-iframe:     "//huangxuan.me/css-sucks-2015/"
+title:      "百度面试总结"
+subtitle:   "一次糟糕的经验"
+header-img: "img/post-bg-kuaidi.jpg"
 date:       2015-12-28
 author:     "Hux"
 tags:
-    - 前端开发
-    - CSS
+    - 面试
 ---
 
+### 前期准备
 
-> 下滑这里查看更多内容
+复习网络知识；P4；Openstack；自己简历所做项目的代码；
+
+## 一轮面试流程(不按序提问)
+
+1. 自我介绍
+2. 按简历上信息进行提问
+3. 介绍一下P4
+4. 用P4做了一些什么项目
+5. 你对P4的看法
+6. 算法：单向链表的反序（逻辑）
+7. 询问有没有什么问题
+
+### 二轮面试流程（不按序提问）
+
+1. 自我介绍
+2. 介绍一下P4，用P4做了些什么项目
+3. 对控制API应用的提问
+4. 挑选一门自己熟悉的语言写出快排算法完整代码
+5. 二三层交换机是怎么进行通信
+6. SDNLAB发表的文章
+7. 实验班是什么情况
+8. 实习时间
+9. 询问有没有什么想问的问题
 
 
+### 总结
 
+时间大约一个半小时；
 
+一轮面试感觉还不错，交流比较有反馈，在回答算法问题的时候提出的办法比较low（多次遍历），后面询问的时候提问面试官是他的话他怎么处理（定义三个指针）；
 
-这个 Web Slides 开源在[我的 Github 上](https://github.com/Huxpro/css-sucks-2015)，欢迎你帮助我完善这个展示文稿，你可以给我提 issue，可以 fork & pull request。如果它能帮助到你了，希望你还能不吝啬 star 一下这个项目
+二轮面试面试官发现面试官完全不知道P4，边看论文文章边提问，讲P4控制程序CLI的时候很费口舌，有点不理解她说的话的意识。在介绍NSP4时认为跟VLAN实现方式一样，没有必要用P4程序做（ps：虽然我也是这样子的想法）（以前实验室谈论过，但是有点忘了，只回答了vlan是用传统的方式，P4是用可编程的形式实现）。提问江苏比赛时认为目前工作只是简单的调用API，称不上是应用，认为开发应用应该是形成一些新的功能(例如VLAN)而不是只是简单实现控制器简单的功能（我回答是说控制器只提供了这些API），现在觉得应该说是这些API其实就可以满足了需求，已经可以用OF来实现各种的功能需求。快排算法已忘（全场最尴尬的一点）。回答交换机怎么通信的时候，大概介绍过程后，详细问了交换机到路由器是什么协议的包，这个没回答上。询问的时候请教面试官，交换机到路由器是什么协议的包（ICMP包），并提问有什么可以改进的方向：网络知识，基本的代码能力
 
+提升方向：算法（C），网络知识
 
-### Catalog
-
-- Document Times
-    - Frameworks
-    - Style Guide
-        - **OOCSS**
-        - **SMACSS**
-    - **Pre-processer**
-    - **PostCSS**
-- Application Times
-    - **Shadow DOM**
-    - **CSS "4"**
-    - Naming Convention
-        - **BEM**
-        - **SUIT**
-    - **Atomic CSS**
-    - **CSS in JS**
-    - **CSS Modules**  
-        - Interoperable CSS
-    - PostCSS, again
-- My Opinionated Proposal
-    - **POCss**
-
-## POCss: Page Override Components CSS
-
-### 1. Scoping Components <br><small style="line-height:2em;">*CSS Blocks should only be used inside a component of the same name.*</small>
-
-```scss
-// Component/index.scss
-.ComponentName {
-    &--mofierName {}
-    &__decendentName {
-        &--modifierName {}
-    }
-    .isStateOfComponent {}
-}
-```
-
-```javascript
-// Component/index.js
-require('./index.scss');
-```
-
-CSS is *always bundled* with components<br>(from loading, mount to unmount)
-
-### 2. Components can be Overrode by Pages <br><small style="line-height:2em;">*There is always requirements to rewrite styles of components in pages*</small>
-
-```scss
-// Pages/PageA.scss
-#PageA {
-    .pagelet-name {
-        .pagelet-descendent-name {}
-    }
-    .ComponentName{ /* override */ }
-}
-```
-
-```javascript
-// Pages/index.js
-require('./PageA.scss');
-```
-
-- *#Page* for absolutely scoping between pages
-- *.pagelet-name* should be lowercase to prevent conflicting with components
-
-### Why POC?
-
-- **It's technology-agnostic**
-<small>
-    *One css framework can be played with whatever technology stacks*<br>
-    *You can combined Scss, PostCSS and whatever you want*
-</small>
-
-- **Solving problems, and easy**
-<small>
-    *Makes reading and teamwork much easier*<br>
-    *Get all benefit from BEM, SUITCSS and others*
-</small>
-
-- **Leverage the power of cascading properly**
-<small>
-    *Scoping components but allow reasonable overriding*<br>
-    *It's pragmatic, flexible and hitting the sweet spot*
-</small>
-
-### Thanks
-
-[Reveal.js](http://lab.hakim.se/reveal-js)
