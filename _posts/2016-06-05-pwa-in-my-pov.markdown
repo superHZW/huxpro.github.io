@@ -2,7 +2,7 @@
 layout:     keynote
 title:      "百度面试总结"
 subtitle:   "一次糟糕的经验"
-header-img: "img/post-bg-kuaidi.jpg"
+header-img: "img/post-bg-miui6.jpg"
 date:       2015-12-28
 author:     "Hux"
 tags:
