@@ -1,13 +1,12 @@
 ---
 layout:     post
-title:      "test"
-subtitle:   "test"
-date:       2017-05-20
+title:      "百度面试总结"
+subtitle:   "一次糟糕的经验"
+date:       2017-6-12
 author:     "hzw"
 header-img: "img/post-bg-kuaidi.jpg"
 tags:a
-    - 知乎
-    - 职业病
+    - 面试
 ---
 
 
